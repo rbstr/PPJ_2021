@@ -21,8 +21,8 @@ public class Assignment3Impl implements Assignment3 {
 
         return IntStream.range(from, to).boxed()
                 .filter(number ->
-						divisibleBy.stream().allMatch(div -> number % div == 0)
-				)
+			divisibleBy.stream().allMatch(div -> number % div == 0)
+			)
                 .mapToInt(i -> i).sum();
 
     }
